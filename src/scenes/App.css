@@ -1,0 +1,14 @@
+@import "~antd/dist/antd.css";
+
+.app {
+  background-color: #ffffff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.box {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: auto;
+}
