@@ -20,8 +20,20 @@ export const addition = value => {
 // • Multiply X & Y, and print the result
 // • Input : 1, 2
 // • Output : 2
-export const multiplication = (x, y) => {
-  return x * y;
+export const multiplication = value => {
+  console.log("addition", value);
+  let input = value.split(",");
+
+  let i;
+  for (i = 0; i < input.length; i++) {
+    input[i] = parseInt(input[i]);
+  }
+
+  let result = input.reduce(function(total, num) {
+    return total * num;
+  });
+
+  return result;
 };
 
 // Find first N prime number, and print the result

@@ -3,13 +3,15 @@ import { Layout, Icon } from "antd";
 import Fibbonacci from "./Fibbonacci";
 import Addition from "./Addition";
 import "./App.css";
+import Multiplication from "./Multiplication";
+import Prime from "./Prime";
 
 const App = () => {
   return (
     <Layout className="app">
       <Layout.Content>
         <div className="box">
-          <Addition />
+          <Prime />
         </div>
       </Layout.Content>
       <Layout.Footer className="footer">

@@ -1,13 +1,14 @@
 import React from "react";
-import { Table } from "antd";
+import { Table, Divider } from "antd";
 import PropTypes from "prop-types";
 
 const TableResult = ({ result }) => {
   return (
-    <div className="table-box">
+    <React.Fragment>
       {console.log("sebelumResult", result)}
       {result && (result.length > 0 || result > 0) && (
         <div>
+          <Divider />
           {console.log("sesudahResult", result)}
           <Table
             showHeader={false}
@@ -42,7 +43,7 @@ const TableResult = ({ result }) => {
           />
         </div>
       )}
-    </div>
+    </React.Fragment>
   );
 };
 

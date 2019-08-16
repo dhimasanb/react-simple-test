@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import * as math from "../../utils/math";
 import FormComponent from "../../components/Form";
 
-class Addition extends Component {
+class Multiplication extends Component {
   constructor(props) {
     super(props);
 
@@ -20,7 +20,7 @@ class Addition extends Component {
 
   calculate = () => {
     const value = this.state.amount;
-    const result = math.addition(value);
+    const result = math.multiplication(value);
 
     return this.setState({
       result
@@ -32,8 +32,8 @@ class Addition extends Component {
 
     return (
       <FormComponent
-        title="Calculator Addition"
-        placeholder="Please input addition number. Ex: 4,1 = 5"
+        title="Calculator Multiplication"
+        placeholder="Please input Multiplication number. Ex: 4,1 = 5"
         value={amount}
         onClick={() => this.calculate()}
         result={result}
@@ -44,4 +44,4 @@ class Addition extends Component {
   }
 }
 
-export default Addition;
+export default Multiplication;
