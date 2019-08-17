@@ -47,6 +47,7 @@
       "!src/scenes/Home/components/**/*.js",
       "!src/scenes/Home/**/*.js",
       "!src/components/TableResult.js",
+      "!src/components/Form.js",
       "!src/utils/*.js",
       "!src/serviceWorker.js"
     ],
