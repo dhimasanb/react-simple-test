@@ -22,7 +22,7 @@ class FormComponent extends PureComponent {
     } = this.props;
 
     return (
-      <div style={{ textAlign: "center", paddingTop: "calc(25vh - 166px)" }}>
+      <div id="form" style={{ textAlign: "center", paddingTop: "calc(25vh - 166px)" }}>
         <Row>
           <Col span={20}>
             <Input

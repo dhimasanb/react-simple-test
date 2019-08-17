@@ -61,37 +61,36 @@ export const sieveOfEratosthenes = n => {
 };
 
 function isPrime(number) {
-  let root = Math.sqrt(number)
+  let root = Math.sqrt(number);
 
-  if(number<=1) {
-      return false
+  if (number <= 1) {
+    return false;
   }
 
   for (let i = 2; i <= root; i++) {
-      if (number % parseInt(i) === parseInt(0)) {
+    if (number % parseInt(i) === parseInt(0)) {
       return false;
-      }
+    }
   }
 
   return true;
 }
 
-export const findPrime = (input) => {
-  let primes = []
-  let count = 0
-  let number = 1
+export const findPrime = input => {
+  let primes = [];
+  let count = 0;
+  let number = 1;
 
-  while(parseInt(count) !== parseInt(input)) {
-      if(isPrime(number)) {
-          primes.push(number)
-          count += 1
-      }
-      number += 1
+  while (parseInt(count) !== parseInt(input)) {
+    if (isPrime(number)) {
+      primes.push(number);
+      count += 1;
+    }
+    number += 1;
   }
 
-  return primes
-}
-
+  return primes;
+};
 
 // Find first N Fibonacci sequence, and print the result
 // • Input : 4

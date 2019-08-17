@@ -1,5 +1,5 @@
 {
-  "name": "rupiah-fraction-counter",
+  "name": "react-simple-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,5 +38,21 @@
     "enzyme-adapter-react-16": "^1.14.0",
     "jest-cli": "^24.9.0",
     "react-test-renderer": "^16.9.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/scenes/Fibonacci/index.js",
+      "!src/index.js",
+      "!src/scenes/Home/components/**/*.js",
+      "!src/components/TableResult.js",
+      "!src/utils/*.js",
+      "!src/serviceWorker.js"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text",
+      "text-summary"
+    ]
   }
 }
