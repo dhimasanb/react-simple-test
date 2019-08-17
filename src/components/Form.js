@@ -7,13 +7,11 @@ class FormComponent extends PureComponent {
   // Keypress event when user press a key 'enter
   handleKeyPressEnter = e => {
     if (e.key === "Enter") {
-      console.log("enter gan");
       this.props.handleKeyPressEnter();
     }
   };
 
   render() {
-    console.log("this.props", this.props);
     const {
       title,
       placeholder,
@@ -24,16 +22,11 @@ class FormComponent extends PureComponent {
     } = this.props;
 
     return (
-      <div style={{ textAlign: "center", paddingTop: "calc(50vh - 166px)" }}>
-        <Row>
-          <Col span={24}>
-            <Typography.Title>{title || "Calculator"}</Typography.Title>
-          </Col>
-        </Row>
+      <div style={{ textAlign: "center", paddingTop: "calc(25vh - 166px)" }}>
         <Row>
           <Col span={20}>
             <Input
-              id={`input-${value}`}
+              id="input-amount"
               placeholder={placeholder}
               value={value}
               maxLength={12}

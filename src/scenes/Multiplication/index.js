@@ -28,12 +28,12 @@ class Multiplication extends Component {
   };
 
   render() {
-    const { amount, result, error } = this.state;
+    const { amount, result } = this.state;
 
     return (
       <FormComponent
         title="Calculator Multiplication"
-        placeholder="Please input Multiplication number. Ex: 4,1 = 5"
+        placeholder="Please input multiplication number. Ex: 4,2 = 5"
         value={amount}
         onClick={() => this.calculate()}
         result={result}

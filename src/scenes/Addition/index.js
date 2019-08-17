@@ -28,11 +28,11 @@ class Addition extends Component {
   };
 
   render() {
-    const { amount, result, error } = this.state;
+    const { amount, result } = this.state;
 
     return (
       <FormComponent
-        title="Calculator Addition"
+        title={null}
         placeholder="Please input addition number. Ex: 4,1 = 5"
         value={amount}
         onClick={() => this.calculate()}

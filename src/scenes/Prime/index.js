@@ -20,20 +20,21 @@ class Prime extends Component {
 
   calculate = () => {
     const value = this.state.amount;
-    const result = math.sieveOfEratosthenes(value);
+    const result = math.findPrime(value);
+    const joinComma = result.join();
 
     return this.setState({
-      result
+      result: joinComma
     });
   };
 
   render() {
-    const { amount, result, error } = this.state;
+    const { amount, result } = this.state;
 
     return (
       <FormComponent
         title="Calculator Prime"
-        placeholder="Please input Prime number. Ex: 4,1 = 5"
+        placeholder="Please input prime number. Ex: 4 = 2, 3, 5, 7"
         value={amount}
         onClick={() => this.calculate()}
         result={result}

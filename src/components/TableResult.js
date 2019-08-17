@@ -5,12 +5,11 @@ import PropTypes from "prop-types";
 const TableResult = ({ result }) => {
   return (
     <React.Fragment>
-      {console.log("sebelumResult", result)}
       {result && (result.length > 0 || result > 0) && (
         <div>
           <Divider />
-          {console.log("sesudahResult", result)}
           <Table
+            id="table-result"
             showHeader={false}
             pagination={false}
             dataSource={[
@@ -36,7 +35,7 @@ const TableResult = ({ result }) => {
                 key: null,
                 width: 200,
                 render: () => {
-                  return <span>{result}</span>;
+                  return <span id="result">{result}</span>;
                 }
               }
             ]}

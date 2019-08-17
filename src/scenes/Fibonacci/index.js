@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import * as math from "../../utils/math";
 import FormComponent from "../../components/Form";
 
-class Fibbonacci extends Component {
+class Fibonacci extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       amount: "",
-      error: "",
-      result: []
+      result: [],
+      error: ""
     };
   }
 
@@ -18,44 +18,35 @@ class Fibbonacci extends Component {
     this.setState({ [name]: event.target.value });
   };
 
-  // Keypress event when user press a key 'enter
-  handleKeyPressEnter = e => {
-    if (e.key === "Enter") {
-      this.calculate();
-    }
-  };
-
   calculate = () => {
     const value = this.state.amount;
     const result = math.fibonacciSequence(value);
 
-    console.log("result", result);
-
     // Remove last element
-    const resultArray = result.slice(0, -1);
+    result.pop();
 
-    console.log("resultArray", resultArray);
+    const joinComma = result.join();
 
     return this.setState({
-      resultArray
+      result: joinComma
     });
   };
 
   render() {
-    const { amount, result, error } = this.state;
+    const { amount, result } = this.state;
 
     return (
       <FormComponent
         title="Calculator Fibbonacci"
-        placeholder="Please input addition number :)"
+        placeholder="Please input fibbonaci number. Ex: 4 = 0, 1, 1, 2"
         value={amount}
         onClick={() => this.calculate()}
         result={result}
         handleChange={this.handleChange("amount")}
-        handleKeyPressEnter={this.handleKeyPressEnter}
+        handleKeyPressEnter={this.calculate}
       />
     );
   }
 }
 
-export default Fibbonacci;
+export default Fibonacci;

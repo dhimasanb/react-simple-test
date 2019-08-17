@@ -2,8 +2,7 @@
 // • Input : 1, 2
 // • Output : 3
 export const addition = value => {
-  console.log("addition", value);
-  let input = value.split(",");
+  let input = value.toString().split(",");
 
   let i;
   for (i = 0; i < input.length; i++) {
@@ -21,8 +20,7 @@ export const addition = value => {
 // • Input : 1, 2
 // • Output : 2
 export const multiplication = value => {
-  console.log("addition", value);
-  let input = value.split(",");
+  let input = value.toString().split(",");
 
   let i;
   for (i = 0; i < input.length; i++) {
@@ -61,6 +59,39 @@ export const sieveOfEratosthenes = n => {
 
   return result;
 };
+
+function isPrime(number) {
+  let root = Math.sqrt(number)
+
+  if(number<=1) {
+      return false
+  }
+
+  for (let i = 2; i <= root; i++) {
+      if (number % parseInt(i) === parseInt(0)) {
+      return false;
+      }
+  }
+
+  return true;
+}
+
+export const findPrime = (input) => {
+  let primes = []
+  let count = 0
+  let number = 1
+
+  while(parseInt(count) !== parseInt(input)) {
+      if(isPrime(number)) {
+          primes.push(number)
+          count += 1
+      }
+      number += 1
+  }
+
+  return primes
+}
+
 
 // Find first N Fibonacci sequence, and print the result
 // • Input : 4
