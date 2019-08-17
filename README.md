@@ -1,68 +1,42 @@
+# React Simple Test
+
+[![Build Status](https://travis-ci.org/dhimasanb/react-simple-test.svg?branch=master)](https://travis-ci.org/dhimasanb/react-simple-test)
+[![Coverage Status](https://coveralls.io/repos/github/dhimasanb/react-simple-test/badge.svg?branch=master)](https://coveralls.io/github/dhimasanb/react-simple-test?branch=master)
+[![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://dashboard.cypress.io/#/projects/wwyfmk/runs)
+[![Depedencies Status](https://david-dm.org/dhimasanb/react-simple-test.svg)](https://david-dm.org/dhimasanb/react-simple-test)
+
+:wrench: React simple test using unit test and end-to-end testing
+
+---
+
+## Live Demo
+
+**<https://react-simple-test.herokuapp.com>**
+
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/13671268/63216132-28128d80-c15b-11e9-8a5e-cbd2d72b49e0.png)
+
+## Tutorial
+
+[https://medium.com/@dhimasanb](https://medium.com/@dhimasanb/membuat-unit-test-dan-end-to-end-testing-sederhana-di-reactjs-46f975367db0)
+
+## Setup
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+```bash
+# Install dependencies
+yarn install
 
-In the project directory, you can run:
+# Run the app in the development mode
+yarn start
+```
 
-### `npm start`
-
-Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## License
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
