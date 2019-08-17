@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { Input, Button, Typography, Row, Col } from "antd";
+import { Input, Button, Row, Col } from "antd";
 import PropTypes from "prop-types";
 import TableResult from "./TableResult";
 
@@ -13,7 +13,6 @@ class FormComponent extends PureComponent {
 
   render() {
     const {
-      title,
       placeholder,
       value,
       onClick,

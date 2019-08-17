@@ -1,6 +1,5 @@
-import React, { PureComponent, Component } from "react";
-import { Layout, Button, Row, Col, Typography } from "antd";
-import { NavLink } from "react-router-dom";
+import React, { PureComponent } from "react";
+import { Layout, Row, Col, Typography } from "antd";
 import Addition from "../Addition";
 import Multiplication from "../Multiplication";
 import Fibonacci from "../Fibonacci";
