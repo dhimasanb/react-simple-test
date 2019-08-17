@@ -3,7 +3,7 @@ import { Layout, Icon } from "antd";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Home from "./Home";
-import Fibbonacci from "./Fibbonacci";
+import Fibonacci from "./Fibonacci";
 import Addition from "./Addition";
 import Multiplication from "./Multiplication";
 import Prime from "./Prime";
@@ -20,7 +20,7 @@ const App = () => {
                   <Route path="/" exact component={Home} />
                   <Route path="/addition" component={Addition} />
                   <Route path="/multiplication" component={Multiplication} />
-                  <Route path="/fibonacci" component={Fibbonacci} />
+                  <Route path="/fibonacci" component={Fibonacci} />
                   <Route path="/prime" component={Prime} />
                 </Switch>
               </BrowserRouter>
