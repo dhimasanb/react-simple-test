@@ -45,6 +45,7 @@
       "!src/scenes/Fibonacci/index.js",
       "!src/index.js",
       "!src/scenes/Home/components/**/*.js",
+      "!src/scenes/Home/**/*.js",
       "!src/components/TableResult.js",
       "!src/utils/*.js",
       "!src/serviceWorker.js"
