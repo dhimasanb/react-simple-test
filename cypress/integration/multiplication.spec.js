@@ -1,16 +1,16 @@
 /* global cy, context :true */
-context("Addition Scene", () => {
+context("Multiplication Scene", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000");
   });
 
   describe("When typing into the amount input 1, 2", function() {
-    it("Click button addition", () => {
-      cy.get("#btn-addition").click();
+    it("Calculate multiplication and button calculate", () => {
+      // Click button multiplication
+      cy.get("#btn-multiplication").click();
       cy.get("#input-amount").should("be.visible");
-    });
 
-    it("Click button calculate", () => {
+      // Click button calculate
       cy.get("#input-amount")
         .type("1,2")
         .should("have.value", "1,2");
@@ -19,10 +19,16 @@ context("Addition Scene", () => {
 
       cy.get("#table-result")
         .find("#result")
-        .should("have.text", "3");
+        .should("have.text", "2");
     });
 
-    it("Press enter key", () => {
+    it("Calculate multiplication and press enter key", () => {
+      // Click button multiplication
+      cy.get("#btn-multiplication").click();
+      cy.get("#input-amount").should("be.visible");
+
+      // Enter key button
+
       cy.get("#input-amount")
         .type("1,2")
         .should("have.value", "1,2");
@@ -31,7 +37,7 @@ context("Addition Scene", () => {
 
       cy.get("#table-result")
         .find("#result")
-        .should("have.text", "3");
+        .should("have.text", "2");
     });
   });
 });

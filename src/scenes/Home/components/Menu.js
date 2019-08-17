@@ -15,7 +15,7 @@ class Menu extends PureComponent {
               <div className="gutter-box">
                 <Button.Group>
                   <Button
-                    id="addition"
+                    id="btn-addition"
                     type="primary"
                     shape="round"
                     onClick={() => this.handleClick("Addition")}
@@ -23,7 +23,7 @@ class Menu extends PureComponent {
                     Addition
                   </Button>
                   <Button
-                    id="multiplication"
+                    id="btn-multiplication"
                     type="primary"
                     shape="round"
                     onClick={() => this.handleClick("Multiplication")}
@@ -31,7 +31,7 @@ class Menu extends PureComponent {
                     Multiplication
                   </Button>
                   <Button
-                    id="fibonacci"
+                    id="btn-fibonacci"
                     type="primary"
                     shape="round"
                     onClick={() => this.handleClick("Fibonacci")}
@@ -39,7 +39,7 @@ class Menu extends PureComponent {
                     Fibonacci
                   </Button>
                   <Button
-                    id="prime"
+                    id="btn-prime"
                     type="primary"
                     shape="round"
                     onClick={() => this.handleClick("Prime")}
